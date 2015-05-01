@@ -3,7 +3,7 @@
  * A simple utility class for storing and retrieving weighted graph edges. 
  * @author Chris Campell
  * @date 4/24/2015
- * @version 1.0
+ * @version 1.5
  */
 public class WeightedEdge implements Comparable<WeightedEdge>{
 	private int i; 
@@ -48,6 +48,6 @@ public class WeightedEdge implements Comparable<WeightedEdge>{
 	 */
 	@Override
 	public int compareTo(WeightedEdge obj) {
-		return (obj.getWeight() - this.weight); 
+		return (this.weight - obj.getWeight()); 
 	}
 }
